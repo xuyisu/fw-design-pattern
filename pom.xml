@@ -12,6 +12,7 @@
         <module>fw-pattern-singleton</module>
         <module>fw-pattern-factory</module>
         <module>fw-pattern-abstract-factory</module>
+        <module>fw-pattern-template-method</module>
     </modules>
 
     <parent>
