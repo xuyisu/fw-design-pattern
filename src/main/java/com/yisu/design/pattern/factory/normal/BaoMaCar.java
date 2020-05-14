@@ -1,4 +1,4 @@
-package com.yisu.design.pattern.factory;
+package com.yisu.design.pattern.factory.normal;
 
 /**
  * @author xuyisu
