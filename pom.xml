@@ -15,6 +15,7 @@
         <module>fw-pattern-template-method</module>
         <module>fw-pattern-builder</module>
         <module>fw-pattern-proxy</module>
+        <module>fw-pattern-prototype</module>
     </modules>
 
     <parent>
