@@ -4,18 +4,18 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author xuyisu
- * @description 奔驰车实现类
+ * @description 黑人实现类
  * @date 2020-05-14
  */
 @Slf4j
-public class BenChiCar implements Car {
+public class BlackHuman implements Human {
     @Override
     public void getColor() {
-        log.info("这个奔驰是红色的！");
+        log.info("这个黑人是黑色的！");
     }
 
     @Override
-    public void run() {
-        log.info("这个奔驰开起来很6！");
+    public void talk() {
+        log.info("这个黑人说话真快！");
     }
 }

@@ -1,10 +1,10 @@
 package com.yisu.design.pattern.factory;
 
-import com.yisu.design.pattern.factory.lazyinitialization.LazyCarSimpleFactory;
-import com.yisu.design.pattern.factory.more.BaoMaCarFactory;
-import com.yisu.design.pattern.factory.more.BenChiCarFactory;
+import com.yisu.design.pattern.factory.lazyinitialization.LazyHumanSimpleFactory;
+import com.yisu.design.pattern.factory.more.BlackHumanFactory;
+import com.yisu.design.pattern.factory.more.WhiteHumanFactory;
 import com.yisu.design.pattern.factory.normal.*;
-import com.yisu.design.pattern.factory.simple.CarSimpleFactory;
+import com.yisu.design.pattern.factory.simple.HumanSimpleFactory;
 import com.yisu.design.pattern.factory.singleton.SingletonFactory;
 import com.yisu.design.pattern.singleton.EmperorHungrySingleton;
 import lombok.extern.slf4j.Slf4j;
@@ -20,19 +20,19 @@ public class FactoryTest {
 
     @Test
     public  void  testFactory(){
-        //声明造车厂
-        AbstractCarFactory carFactory = new CarFactory();
-        //先生产宝马车
-        log.info("--先造宝马车--");
-        Car bmCar = carFactory.createCar(BaoMaCar.class);
-        bmCar.getColor();
-        bmCar.run();
+        //声明造厂
+        AbstractHumanFactory carFactory = new HumanFactory();
+        //先生产黑人
+        log.info("--先造黑人--");
+        Human bmHuman = carFactory.createHuman(BlackHuman.class);
+        bmHuman.getColor();
+        bmHuman.talk();
 
-        //第二批生产奔驰车
-        log.info("--第二批生产奔驰车--");
-        Car bcCar = carFactory.createCar(BenChiCar.class);
-        bcCar.getColor();
-        bcCar.run();
+        //第二批生产白人
+        log.info("--第二批生产白人--");
+        Human bcHuman = carFactory.createHuman(WhiteHuman.class);
+        bcHuman.getColor();
+        bcHuman.talk();
     }
 
     /**
@@ -40,17 +40,17 @@ public class FactoryTest {
      */
     @Test
     public  void  testSimpeFactory(){
-        //先生产宝马车
-        log.info("--先造宝马车--");
-        Car bmCar = CarSimpleFactory.createCar(BaoMaCar.class);
-        bmCar.getColor();
-        bmCar.run();
+        //先生产黑人
+        log.info("--先造黑人--");
+        Human bmHuman = HumanSimpleFactory.createHuman(BlackHuman.class);
+        bmHuman.getColor();
+        bmHuman.talk();
 
-        //第二批生产奔驰车
-        log.info("--第二批生产奔驰车--");
-        Car bcCar = CarSimpleFactory.createCar(BenChiCar.class);
-        bcCar.getColor();
-        bcCar.run();
+        //第二批生产白人
+        log.info("--第二批生产白人--");
+        Human bcHuman = HumanSimpleFactory.createHuman(WhiteHuman.class);
+        bcHuman.getColor();
+        bcHuman.talk();
     }
 
     /**
@@ -58,17 +58,17 @@ public class FactoryTest {
      */
     @Test
     public  void  testMoreFactory(){
-        //先生产宝马车
-        log.info("--先造宝马车--");
-        Car bmCar = (new BaoMaCarFactory()).createCar();
-        bmCar.getColor();
-        bmCar.run();
+        //先生产黑人
+        log.info("--先造黑人--");
+        Human bmHuman = (new BlackHumanFactory()).createHuman();
+        bmHuman.getColor();
+        bmHuman.talk();
 
-        //第二批生产奔驰车
-        log.info("--第二批生产奔驰车--");
-        Car bcCar = (new BenChiCarFactory()).createCar();
-        bcCar.getColor();
-        bcCar.run();
+        //第二批生产白人
+        log.info("--第二批生产白人--");
+        Human bcHuman = (new WhiteHumanFactory()).createHuman();
+        bcHuman.getColor();
+        bcHuman.talk();
     }
 
     /**
@@ -86,16 +86,16 @@ public class FactoryTest {
      */
     @Test
     public  void  testLazySimpeFactory(){
-        //先生产宝马车
-        log.info("--先造宝马车--");
-        Car bmCar = LazyCarSimpleFactory.createCar(BaoMaCar.class);
-        bmCar.getColor();
-        bmCar.run();
+        //先生产黑人
+        log.info("--先造黑人--");
+        Human bmHuman = LazyHumanSimpleFactory.createHuman(BlackHuman.class);
+        bmHuman.getColor();
+        bmHuman.talk();
 
-        //第二批生产奔驰车
-        log.info("--第二批生产奔驰车--");
-        Car bcCar = LazyCarSimpleFactory.createCar(BenChiCar.class);
-        bcCar.getColor();
-        bcCar.run();
+        //第二批生产白人
+        log.info("--第二批生产白人--");
+        Human bcHuman = LazyHumanSimpleFactory.createHuman(WhiteHuman.class);
+        bcHuman.getColor();
+        bcHuman.talk();
     }
 }
