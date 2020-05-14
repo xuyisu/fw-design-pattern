@@ -13,6 +13,7 @@
         <module>fw-pattern-factory</module>
         <module>fw-pattern-abstract-factory</module>
         <module>fw-pattern-template-method</module>
+        <module>fw-pattern-builder</module>
     </modules>
 
     <parent>
