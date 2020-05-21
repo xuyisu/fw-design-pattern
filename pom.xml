@@ -20,6 +20,7 @@
         <module>fw-pattern-command</module>
         <module>fw-pattern-chain-of-responsibility</module>
         <module>fw-pattern-decorator</module>
+        <module>fw-pattern-strategy</module>
     </modules>
 
     <parent>
