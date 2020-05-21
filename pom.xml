@@ -17,6 +17,7 @@
         <module>fw-pattern-proxy</module>
         <module>fw-pattern-prototype</module>
         <module>fw-pattern-mediator</module>
+        <module>fw-pattern-command</module>
     </modules>
 
     <parent>
