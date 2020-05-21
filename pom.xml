@@ -21,6 +21,7 @@
         <module>fw-pattern-chain-of-responsibility</module>
         <module>fw-pattern-decorator</module>
         <module>fw-pattern-strategy</module>
+        <module>fw-pattern-adapter</module>
     </modules>
 
     <parent>
