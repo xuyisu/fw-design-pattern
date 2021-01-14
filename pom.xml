@@ -26,6 +26,7 @@
         <module>fw-pattern-composite</module>
         <module>fw-pattern-observer</module>
         <module>fw-pattern-facade</module>
+        <module>fw-pattern-memento</module>
     </modules>
 
     <parent>
