@@ -24,6 +24,7 @@
         <module>fw-pattern-adapter</module>
         <module>fw-pattern-iterator</module>
         <module>fw-pattern-composite</module>
+        <module>fw-pattern-observer</module>
     </modules>
 
     <parent>
