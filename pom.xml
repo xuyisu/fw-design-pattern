@@ -22,6 +22,7 @@
         <module>fw-pattern-decorator</module>
         <module>fw-pattern-strategy</module>
         <module>fw-pattern-adapter</module>
+        <module>fw-pattern-iterator</module>
     </modules>
 
     <parent>
