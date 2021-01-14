@@ -25,6 +25,7 @@
         <module>fw-pattern-iterator</module>
         <module>fw-pattern-composite</module>
         <module>fw-pattern-observer</module>
+        <module>fw-pattern-facade</module>
     </modules>
 
     <parent>
