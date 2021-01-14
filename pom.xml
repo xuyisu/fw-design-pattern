@@ -23,6 +23,7 @@
         <module>fw-pattern-strategy</module>
         <module>fw-pattern-adapter</module>
         <module>fw-pattern-iterator</module>
+        <module>fw-pattern-composite</module>
     </modules>
 
     <parent>
